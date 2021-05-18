@@ -35,7 +35,7 @@ This is where we bring in AI to solve our problem. Instead of creating trillions
 # Getting Started
 The tutorial will continue in separate pages. If the section isn't hyperlinked, then it likely means I haven't finished it yet. Check back later if that is the case! 
 
-0. ["lessons/lesson-1"](Setting up your IDE)
+0. [Setting up your IDE](https://anishg24.github.io/JavaSentimentNetwork/lessons/lesson-1)
 1. Reading our data
 2. Playing with our data
 3. Processing our data
@@ -45,3 +45,8 @@ The tutorial will continue in separate pages. If the section isn't hyperlinked, 
 
 # Terminology
 In the case I use words that you don't understand, you can come here to look at my definition.
+
+> Model - synoymous with our classifier network
+
+### Special Thanks
+- [Udacity Deep Learning](https://github.com/udacity/deep-learning)
