@@ -16,6 +16,7 @@ and our definition will follow the same. If I told you *"That movie was utter tr
 
 ## The Blacklist
 The logical way that people would do and what CollegeBoard teaches you is to use a blacklist. But there are clear drawbacks to this method. Let's say we chose to use a list of words that we know are negative, and if a review contains the word, we know the review is negative.
+
 |Word |
 |--   |
 |trash|
