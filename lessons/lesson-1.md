@@ -1,3 +1,9 @@
+---
+layout: default
+title: Chapter 1
+nav_order: 2
+---
+
 # Chapter 1: Setting up your IDE
 
 ## 1.0.0 What is an IDE?
