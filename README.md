@@ -35,7 +35,7 @@ This is where we bring in AI to solve our problem. Instead of creating trillions
 # Getting Started
 The tutorial will continue in separate pages. If the section isn't hyperlinked, then it likely means I haven't finished it yet. Check back later if that is the case! 
 
-0. Setting up your IDE
+0. ["lessons/lesson-1"](Setting up your IDE)
 1. Reading our data
 2. Playing with our data
 3. Processing our data
