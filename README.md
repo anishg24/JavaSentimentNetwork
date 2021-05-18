@@ -35,8 +35,8 @@ This is where we bring in AI to solve our problem. Instead of creating trillions
 # Getting Started
 The tutorial will continue in separate pages. If the section isn't hyperlinked, then it likely means I haven't finished it yet. Check back later if that is the case! 
 
-0. [Setting up your IDE](https://anishg24.github.io/JavaSentimentNetwork/lessons/lesson-1) COMPLETED {: .label .label-green}
-2. Reading our data IN PROGRESS {: .label .label- yellow}
+0. [Setting up your IDE](https://anishg24.github.io/JavaSentimentNetwork/lessons/lesson-1)
+2. Reading our data
 3. Playing with our data
 4. Processing our data
 5. Creating `SentimentNetwork.java`
