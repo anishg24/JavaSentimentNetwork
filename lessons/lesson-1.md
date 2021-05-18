@@ -35,7 +35,8 @@ There will be files you need to download and are provided below:
 * [`src/jblas-1.2.4.jar`](https://github.com/anishg24/JavaSentimentNetwork/releases/download/scratch/jblas-1.2.4.jar)
 
 When you create Java class files in a subdirectory, you **need** to include the `package` keyword. For example, your `Counter.java` would look like this:
-```java
+{% capture code %}
+{% highlight java linenos %}
 package helper; // <-- We say 'package helper' because Counter.java is in the "helper" folder.
 
 //... imports hidden for brevity
@@ -43,7 +44,10 @@ package helper; // <-- We say 'package helper' because Counter.java is in the "h
 public class Counter {
 	//...
 }
-```
+{% endhighlight %}
+{% endcapture %}
+{% include fix_linenos.html code=code %}
+{% assign code = nil %}
 
 When you are done creating and downloading all 11 files, you can move onto the next section in this chapter. Ignore section 1.1.1 as its for students not pursuing the scratch route, and go straight to section 1.2.0.
 
