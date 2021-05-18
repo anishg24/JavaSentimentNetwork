@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Introduction
+title: Chapter 0
 nav_order: 1
 ---
-# Introduction
+# Chapter 0: Introduction
 Welcome to this tutorial on how to create your own binary sentiment classifier network in Java! This project is more advanced than anything CollegeBoard will offer you, but if you have a true passion in programming, computational mathematics, or artificial intelligence, you should definitely consider completing this tutorial!
 
 This tutorial will start off by teaching you how to process a dataset and see if we can figure out a way to quantitatively represent the rather qualitative data we are given. This won't be complex and simple for-loops will yield the results we are looking for. After the data processing step, we can move on to creating our binary classifier network, that we will train and test, then use it for inference. 
