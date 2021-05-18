@@ -1,6 +1,3 @@
----
-nav_order:1
----
 # Introduction
 Welcome to this tutorial on how to create your own binary sentiment classifier network in Java! This project is more advanced than anything CollegeBoard will offer you, but if you have a true passion in programming, computational mathematics, or artificial intelligence, you should definitely consider completing this tutorial!
 
