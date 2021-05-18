@@ -1,5 +1,13 @@
 title: Sentiment Network
-
 author: Anish Govind
 
 remote_theme: pmarsceill/just-the-docs
+
+compress_html:
+  ignore:
+    envs: all
+    
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
