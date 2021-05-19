@@ -13,6 +13,7 @@ This chapter is dedicated to playing with our data, finding correlations in it, 
 We have 2 files, `reviews.txt` and `labels.txt`. `reviews.txt` contains thousands of movie reviews, and `labels.txt` contains a *positive* or *negative* corresponding to each review. The reviews were hand **labelled** by humans as either positive or negative. Traditionally, data files like this wouldn't be stored in `.txt` files, as it would be too inconsistent. But, since our dataset is small (<1 GB), this shouldn't be an issue. 
 
 Each review in `reviews.txt` is separated by a *newline* character. We know this because if we opened `reviews.txt` in Google Docs or some other text editing document, we'd see that every review is in its own "paragraph". The same goes for `labels.txt`. Because we know of the delimiter, we can create a table to represent our data:
+
 |Index|Review|Label|
 |--|--|--|
 |0|this isn't the come...|positive|
