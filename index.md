@@ -42,14 +42,7 @@ The tutorial will continue in separate pages. If the section isn't hyperlinked, 
 
 1. [Setting up your IDE](https://anishg24.github.io/JavaSentimentNetwork/lessons/lesson-1)
 2. Data Processing
-	  2.1. Creating `DataReader.java`
-    2.2. Creating `Counter.java` and `RatioCounter.java`
-    2.3. Creating `Dictionary.java`
-    2.4. Creating `DataExploration.java`
-3. Network Creation
-	  3.1. Creating `SentimentNetwork.java`
-	  3.2. Creating `EfficientSentimentNetwork.java`
-	  3.3. Creating `NetworkRunner.java`
+3. Model Creation
 
 # Terminology
 In the case I use words that you don't understand, you can come here to look at my definition.
