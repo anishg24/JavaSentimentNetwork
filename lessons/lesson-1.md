@@ -57,11 +57,11 @@ When you are done creating and downloading all 11 files, you can move onto the n
 This section is for students who aren't fully confident in their ability to turn tutorial to code. This is perfectly fine, and to honor them I have added `.zip` files that contain my code, from varying difficulty. (If the following aren't hyperlinked, I haven't adequately finished creating lessons for them yet)
 
 1. [`SentimentClassification-Easy.zip`](https://github.com/anishg24/JavaSentimentNetwork/releases/download/zips/SentimentClassifier-Easy.zip)
-	* The networks have been fully implemented **(skipping chapters 5 and 6)**
+	* The networks have been fully implemented **(skipping chapter 3)**
 	* You will implement the classes we will use for data processing
 		* The hardest thing you will do is sorting `Map` objects (and will be explained)
 2. [`SentimentClassification-Medium.zip`](https://github.com/anishg24/JavaSentimentNetwork/releases/download/zips/SentimentClassifier-Medium.zip)
-	* The data processing classes have been fully implemented **(skipping chapters 2, 3, and 4)**
+	* The data processing classes have been fully implemented **(skipping chapter 2)**
 	* You will implement the network classes
 		* The hardest thing you will do is the `train` method, relying on heavy linear algebra (handled by the `jblas` library and will be explained in this tutorial)
 3. [`SentimentClassification-Hard.zip`](https://github.com/anishg24/JavaSentimentNetwork/releases/download/zips/SentimentClassifier-Hard.zip)
