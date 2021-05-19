@@ -40,13 +40,16 @@ This is where we bring in AI to solve our problem. Instead of creating trillions
 # Getting Started
 The tutorial will continue in separate pages. If the section isn't hyperlinked, then it likely means I haven't finished it yet. Check back later if that is the case! 
 
-0. [Setting up your IDE](https://anishg24.github.io/JavaSentimentNetwork/lessons/lesson-1)
-2. Reading our data
-3. Playing with our data
-4. Processing our data
-5. Creating `SentimentNetwork.java`
-6. Creating `EfficientSentimentNetwork.java`
-7. Running our network.
+1. [Setting up your IDE](https://anishg24.github.io/JavaSentimentNetwork/lessons/lesson-1)
+2. Data Processing
+	  2.1. Creating `DataReader.java`
+    2.2. Creating `Counter.java` and `RatioCounter.java`
+    2.3. Creating `Dictionary.java`
+    2.4. Creating `DataExploration.java`
+3. Network Creation
+	  3.1. Creating `SentimentNetwork.java`
+	  3.2. Creating `EfficientSentimentNetwork.java`
+	  3.3. Creating `NetworkRunner.java`
 
 # Terminology
 In the case I use words that you don't understand, you can come here to look at my definition.
