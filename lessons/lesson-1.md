@@ -41,8 +41,7 @@ There will be files you need to download and are provided below:
 * [`src/jblas-1.2.4.jar`](https://github.com/anishg24/JavaSentimentNetwork/releases/download/scratch/jblas-1.2.4.jar)
 
 When you create Java class files in a subdirectory, you **need** to include the `package` keyword. For example, your `Counter.java` would look like this:
-{% capture code %}
-{% highlight java linenos %}
+```java
 package helper; // <-- We say 'package helper' because Counter.java is in the "helper" folder.
 
 //... imports hidden for brevity
@@ -50,29 +49,26 @@ package helper; // <-- We say 'package helper' because Counter.java is in the "h
 public class Counter {
 	//...
 }
-{% endhighlight %}
-{% endcapture %}
-{% include fix_linenos.html code=code %}
-{% assign code = nil %}
+```
 
 When you are done creating and downloading all 11 files, you can move onto the next section in this chapter. Ignore section 1.1.1 as its for students not pursuing the scratch route, and go straight to section 1.2.0.
 
 ## 1.1.1 Starting with my code
 This section is for students who aren't fully confident in their ability to turn tutorial to code. This is perfectly fine, and to honor them I have added `.zip` files that contain my code, from varying difficulty. (If the following aren't hyperlinked, I haven't adequately finished creating lessons for them yet)
 
-1. `SentimentClassification-Easy.zip`
+1. [`SentimentClassification-Easy.zip`](https://github.com/anishg24/JavaSentimentNetwork/releases/download/zips/SentimentClassifier-Easy.zip)
 	* The networks have been fully implemented **(skipping chapters 5 and 6)**
 	* You will implement the classes we will use for data processing
 		* The hardest thing you will do is sorting `Map` objects (and will be explained)
-2. `SentimentClassification-Medium.zip`
+2. [`SentimentClassification-Medium.zip`](https://github.com/anishg24/JavaSentimentNetwork/releases/download/zips/SentimentClassifier-Medium.zip)
 	* The data processing classes have been fully implemented **(skipping chapters 2, 3, and 4)**
 	* You will implement the network classes
 		* The hardest thing you will do is the `train` method, relying on heavy linear algebra (handled by the `jblas` library and will be explained in this tutorial)
-3. `SentimentClassification-Hard.zip`
+3. [`SentimentClassification-Hard.zip`](https://github.com/anishg24/JavaSentimentNetwork/releases/download/zips/SentimentClassifier-Hard.zip)
 	* Nothing has been implemented, but all the filler work (creating classes, instance variables, method signatures) has been done for you
 	* You will implement all the logic from both data processing to creation of the network
 
-Download any of the `.zip` files above (based on what you are interested in) and set it up correctly in your IDE.
+**NONE** of the zip files require you doing any hard matrix commands. As much as I'd love to encourage you to create the training and testing functions for your Sentiment Networks, they are incredibly delicate. I will go over the functions throughout the course, but I will not require you to write it by yourself. Download any of the `.zip` files above (based on what you are interested in) and set it up correctly in your IDE.
 
 ## 1.2.0 Setting up jblas
 jblas (**J**ava **BLAS**) is a java implementation of BLAS (**B**asic **L**inear **A**lgebra **S**ubprograms). It is incredibly important that we set up jblas **correctly** as it is responsible for all of the math that our network is going to be doing. Whether you started from scratch or you downloaded a `.zip` file from above, you **MUST** tell your IDE that you are using this library, so that when your code compiles, `jblas-1.2.4.jar` is compiled with it.
