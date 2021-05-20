@@ -161,17 +161,17 @@ public class DataReader() {
 	}
 
 	private void readLabelFile(String labelFileName){
-        try {
-            File labelFile = new File(labelFileName);
-            Scanner fileReader = new Scanner(labelFile);
-            while (fileReader.hasNextLine()){
-                this.labels.add(fileReader.nextLine().toUpperCase());
-            }
-            fileReader.close();
-        } catch (FileNotFoundException e){
-            System.out.println(labelFileName + " doesn't exist!");
-            e.printStackTrace();
-        }
+		try {
+		    File labelFile = new File(labelFileName);
+		    Scanner fileReader = new Scanner(labelFile);
+		    while (fileReader.hasNextLine()){
+			this.labels.add(fileReader.nextLine().toUpperCase());
+		    }
+		    fileReader.close();
+		} catch (FileNotFoundException e){
+		    System.out.println(labelFileName + " doesn't exist!");
+		    e.printStackTrace();
+		}
     }
 }
 ```
@@ -179,12 +179,12 @@ Now I realize that the code looks daunting, but let's take a careful look at the
 ```java
 private void readReviewFile(String reviewFileName){
    try {
-	   File reviewFile = new File(reviewFileName);
-	   Scanner fileReader = new Scanner(reviewFile);
-	   while (fileReader.hasNextLine()) {
-		   this.reviews.add(fileReader.nextLine());
-	   }
-	   fileReader.close();
+		File reviewFile = new File(reviewFileName);
+		Scanner fileReader = new Scanner(reviewFile);
+		while (fileReader.hasNextLine()) {
+			this.reviews.add(fileReader.nextLine());
+		}
+		fileReader.close();
 	} catch (FileNotFoundException e) {
 		System.out.println(reviewFileName + " doesn't exist!");
 		e.printStackTrace();
