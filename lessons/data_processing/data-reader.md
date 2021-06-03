@@ -66,10 +66,15 @@ try {
 }
 ```
 Lines 1-3: Import the objects we care about
+
 Line 4: Create a `File` object that gets data from our file and streams it
+
 Line 5: Create a `Scanner` object that streams data from our `File` object
+
 Line 6: We can use `Scanner` methods like we did before, things like `.nextLine()` or `.nextInt()`
+
 Line 7: When we are done, its good practice to close our stream
+
 Lines 8-11: In the case that we don't find the file we specified in line 4, we will print it out and print the exact error. It is good practice to implement this to make it more user friendly.
 
 With all these new topics covered, we can finally start making our `DataReader.java` class.
@@ -91,10 +96,15 @@ public class DataReader {
 }
 ```
 Line 1: This line denotes the fact that `DataReader.java` is in the `helper/` directory.
+
 Line 3: Import Java's object for streaming in files. We will use this in conjunction with `Scanner` to read in files
+
 Line 4: An error to throw in case we don't find a file at the given location
+
 Line 5: `ArrayList` will be used to store our reviews and labels
+
 Line 6: We will use the `Scanner` in conjunction with `File` to read in from our `.txt` files.
+
 
 ## 2.1.2 Instance variables
 Now with the busy work done, we will create our instance variables. In this file, we only have 2:
@@ -107,7 +117,9 @@ public class DataReader {
 }
 ``` 
 Line 3: Create an `ArrayList<String>` for our reviews and initialize it with an empty `ArrayList`
+
 Line 4: Create an `ArrayList<String>` for our labels and initialize it with an empty `ArrayList`
+
 
 ## 2.1.3 Constructors
 Lets make a default constructor and overloaded constructor! We will use the default constructor, but in the case we need to search for our data file elsewhere, we can do it with the overloaded constructor. Instead of doing all the grunt work in our constructor, we will use 2 methods to simplify our constructor.
@@ -127,7 +139,9 @@ public class DataReader {
 }
 ```
 Line 4: Our default constructor. We use an absolute path to our data because we know exactly where our data files are located. **If your data files are located somewhere else then you must change the string to accurately reflect it**
+
 Line 5-6: Use 2 methods called `readReviewFile` and `readLabelFile` that takes one `String` as an argument. These methods do all the hard work of reading the data and adding to our `ArrayList`s. We will implement these methods next. 
+
 Line 9-12: Our overloaded constructor. We add this because in the case we want to test a location before making a permanent change, we can do so using this constructor. 
 
 Since both constructors are practically identical, you *can* rewrite the default constructor as:
@@ -192,11 +206,17 @@ private void readReviewFile(String reviewFileName){
 }
 ```
 Line 1: We want this method `private` as we don't plan to let users explicitly call this function. It should be used by this class only so that way the end user doesn't mess with their data too much
+
 Line 3: We create our `File` object that creates a stream from the file passed to this function as an argument
+
 Line 4: We create our `Scanner` object. This is what we will use to read data from the `File` we created before
+
 Line 5: This `while` loop helps us iterate through our entire stream so we can read it. `Scanner` has a built in function called `.hasNextLine()` which returns `true` if there is a line we can read and `false` if there isn't
+
 Line 6: Here we add the `String` we get from `fileReader.nextLine()` to our reviews `ArrayList`
+
 Line 8: We close our `Scanner` stream for safety purposes
+
 Line 9-12: Catch any errors relating to a missing file and print out the fact that the file is missing.
 
 We've seen this before earlier in this lesson, but one thing I want to call out specifically is the `while` loop so that we can better understand it. Let's do this with an example. We have a text file that we are going to iterate through:
@@ -274,10 +294,15 @@ public class DataReader() {
 }
 ```
 Line 7 - Our `prettyPrintReview` method signature. We want this to be `public` so that we can call it later in our `DataExploration.java` file and see its output.
+
 Line 8 - Ensure that our index is within bounds of our `ArrayList` objects
+
 Line 9 - Print out our label first (remember `this.labels` and `this.reviews` are `ArrayList` objects), then space out a divider (in our case the divider is a `:`) with tabs (`\t`)
+
 Line 11 - Print out 80 characters of our review and add ellipsis (`...`) to denote theres more to the review
+
 Line 12 - If there are less than 80 characters in a review, Java **will** throw an `IndexOutOfBoundsException`, so  we catch it here
+
 Line 13 - We print out the whole review given that its less than 80 characters
 
 ### Getter functions
@@ -331,12 +356,19 @@ public class DataExploration {
 }
 ```
 Line 1: Import our `DataReader.java` class we worked so hard on
+
 Line 2: Import the `ArrayList` object
+
 Line 6: Create a `DataReader` object
+
 Line 7-8: Get our reviews and labels (respectively)
+
 Line 10: Check how many reviews we have
+
 Line 11: Check that the number of reviews is equal to the number of labels
+
 Line 12: Check that the number of reviews and number of labels are equal, this time using getters we defined
+
 Line 14-16: Pretty print 10 reviews.
 
 With this code, you should get an output like the following:
